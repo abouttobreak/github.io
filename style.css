@@ -295,7 +295,7 @@ transform: scale(1.1);
     flex-basis: 30%;
     font-size: 30px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .btn {
     width: fit-content;
@@ -312,6 +312,7 @@ transform: scale(1.1);
     /*---------------contact------------*/
 .contact{
     text-align: center;
+    margin-top: 30px;
     }
     .contact p{
     font-size: 30px;
