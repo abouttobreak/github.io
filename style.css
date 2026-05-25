@@ -1,21 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
+
 .roboto-all {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
-  }
-html{
+        "wdth" 100;
+}
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background: #080808;
     color: #fff;
 }
@@ -27,11 +30,12 @@ body{
     background-size: cover;
     background-position: center;
 }
-.container{
+
+.container {
     padding: 12px 3%;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,18 +45,19 @@ nav{
 .logo {
     width: 300px;
 }
-nav ul{
+
+nav ul {
     margin-top: -2%;
     margin-right: -2%;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 8px 8px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 23px;
@@ -61,20 +66,20 @@ nav ul li a{
 
 }
 
-nav ul li a::after{
-content: '';
-width: 0;
-height: 3px;
-background: #3e3e3e;
-position: absolute;
-left: 0;
-bottom: -6px;
-transition: 0.5s;
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3e3e3e;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
-    }
+}
 
 /*-------------language-selector----------*/
 .dropbtn {
@@ -86,76 +91,89 @@ nav ul li a:hover::after{
     position: relative;
     list-style: none;
     width: fit-content;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: absolute;
     display: inline-block;
     margin-top: -1.1%;
     margin-left: -1%;
     border-radius: 10%;
-  }
-  .dropdown img{
+}
+
+.dropdown img {
     width: 70%;
 
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #bdbdbdaf;
     min-width: 10px;
     z-index: 1;
-  }
-  .dropdown-content img{
+}
+
+.dropdown-content img {
     width: 70%;
     margin-left: 4px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     color: black;
     padding: 5px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #9a9a9a; border-radius: 10%}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block; border-radius: 10%}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #b3b3b3;    border-radius: 10%;}
-  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #9a9a9a;
+    border-radius: 10%
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10%
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #b3b3b3;
+    border-radius: 10%;
+}
+
 /*----------about---------*/
-#about{
+#about {
     padding: 50px 0;
     color: #ababab;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.about-col-1 {
     flex-basis: 40%;
 }
 
-.about-col-1 img{
+.about-col-1 img {
     width: 100%;
     border-radius: 10px;
 }
-.about-col-2{
+
+.about-col-2 {
     flex-basis: 55%;
     font-size: 25px;
 }
 
-.sub-title{
+.sub-title {
     font-size: 70px;
     font-weight: 600;
     color: #fff;
@@ -163,30 +181,34 @@ nav ul li a:hover::after{
 
 /*-----------------band----------*/
 
-#band{
-    padding: 40px 0;   
+#band {
+    padding: 40px 0;
 }
-.member-list{
+
+.member-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.member{
+
+.member {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.member img{
+
+.member img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+
+.layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #404040);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #404040);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -201,11 +223,13 @@ nav ul li a:hover::after{
     font-size: 20px;
     transition: height 0.5s;
 }
-.layer h3{
+
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+
+.layer a {
     margin-top: 20px;
     color: #363636;
     text-decoration: none;
@@ -217,24 +241,28 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
-.member:hover img{
-transform: scale(1.1);
+
+.member:hover img {
+    transform: scale(1.1);
 }
-.member:hover .layer{
+
+.member:hover .layer {
     height: 100%;
 }
 
 /*---------------music-------------*/
-#music{
+#music {
     padding: 50px 0;
 }
-.music-list{
+
+.music-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.music-list div{
+
+.music-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -242,138 +270,231 @@ transform: scale(1.1);
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
-.music-list div i{
+
+.music-list div i {
     font-size: 70px;
     margin-bottom: 30px;
-    
+
 }
-.music-list div h2{
+
+.music-list div h2 {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.music-list div a{
+
+.music-list div a {
     text-decoration: underline;
     color: #fff;
     font-size: 23px;
     margin-top: 20px;
     display: inline-block;
 }
-.music-list div p{
+
+.music-list div p {
     font-size: 25px;
 }
-.music-list div:hover{
+
+.music-list div:hover {
     background: #757575;
     transform: translateY(-10px);
 }
 
 /*------------------concerts-------------*/
-#concerts{
+#concerts {
     padding: 50px 0;
 }
-.concerts p{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
-    }
-.concerts-list{
-    margin-top: 20px;
-    padding: 10px 10px;
-}
-.concerts-col-1{
-    flex-basis: 40%;
-    font-size: 30px;
-    margin-top: 30px;
-}
-.concerts-col-2{
-    flex-basis: 30%;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 30px;
-}
-.concerts-col-3{
-    flex-basis: 30%;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 60px;
-}
-.btn {
-    width: fit-content;
-    border: 1px solid #363636;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;transition: 0.5s;
-    }
-    .btn:hover{
-        background: #a0a0a0;
-    }
 
-    /*---------------contact------------*/
-.contact{
+/* ── Section heading — keep .sub-title scoped to concerts ── */
+#concerts .sub-title {
+    letter-spacing: 0.04em;
+    line-height: 0.9;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+/* ── List container ── */
+.concerts-list {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* 1-px gap reads as a hairline divider */
+}
+
+/* ── Each concert row ── */
+.concerts-list .row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.75rem 2rem;
+    background: #262626;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.25s;
+    border-radius: 5px;
+}
+
+.concerts-list .row:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Red left-edge sweep on hover */
+.concerts-list .row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background: #757575;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+}
+
+.concerts-list .row:hover {
+    background: rgba(123, 123, 123, 0.04);
+}
+
+.concerts-list .row:hover::before {
+    transform: scaleY(1);
+}
+
+/* ── Venue name column ── */
+.concerts-col-1 {
+    /* flex child, no extra wrapper needed */
+}
+
+.concerts-col-1 p {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ── Date column ── */
+.concerts-col-2 {
+    /* keep right-aligned visually via grid */
+}
+
+.concerts-col-2 p {
+    font-size: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* ── Button column ── */
+.concerts-col-3 {
+    /* auto-width */
+}
+
+/* ── Ticket / Info button — overrides the global .btn ── */
+#concerts .btn {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px 20px;
+    border-radius: 1px;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+#concerts .btn:hover {
+    background: #757575;
+    border-color: #757575;
+    color: #ffffff;
+}
+
+/*---------------contact------------*/
+.contact {
     text-align: center;
     margin-top: 30px;
-    }
-    .contact p{
+}
+
+.contact p {
     font-size: 30px;
     margin-top: 30px;
-    }
-    .contact p i{
-        color: #757575;
-        margin-right: 15px;
-        font-size: 25px;
-    }
-    .social-icons{
-        margin-top: 30px;
-    }
-    .social-icons a{
-        text-decoration: none;
-        font-size: 50px;
-        margin-right: 15px;
-        color: #ababab;
-        display: inline-block;
-        transition: transform 0.5s;
-    }
-    .social-icons a:hover{
-        color: #ababab;
-        transform: translateY(-5px);
-    }
-    .copyright{
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        background: #282828;
-        font-weight: 300;
-        margin-top: 40px;
-    }
-    .copyright i{
-        color: #ff3434;
-    }
-    .copyright a{
-        text-decoration: underline;
-        color: #fff;
-    }
+}
+
+.contact p i {
+    color: #757575;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ababab;
+    transform: translateY(-5px);
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #282828;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.copyright i {
+    color: #ff3434;
+}
+
+.copyright a {
+    text-decoration: underline;
+    color: #fff;
+}
+
 /*----------css for small screen-----------*/
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 600px){
-    #header{
+@media only screen and (max-width: 600px) {
+    #header {
         background-image: url(Assets/Background1.png);
 
     }
-    nav .fa-solid{
+
+    nav .fa-solid {
         display: block;
         position: absolute;
         font-size: 40px;
         margin-left: 75%;
     }
-    nav .logo{
+
+    nav .logo {
         width: 55%;
         margin-left: -1%;
     }
-    nav ul{
+
+    nav ul {
         background: #3f3f3f;
         position: fixed;
         top: 0;
@@ -384,102 +505,131 @@ nav .fa-solid{
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid{
+
+    nav ul .fa-solid {
         position: relative;
         left: -30px;
         cursor: pointer;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 40px;
     }
 
     /*-------------language-selector----------*/
-.dropbtn {
-    background-color: #3f3f3f00;
-    color: white;
-    padding: 5px;
-    border: none;
-    display: inline-block;
-    position: relative;
-    list-style: none;
-    width: fit-content;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: absolute;
-    display: inline-block;
-  }
-  .dropdown img{
-    width: 20%;
-    margin-left: -125px;
+    .dropbtn {
+        background-color: #3f3f3f00;
+        color: white;
+        padding: 5px;
+        border: none;
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        width: fit-content;
+    }
 
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #bdbdbdaf;
-    min-width: 10px;
-    z-index: 1;
-  }
-  .dropdown-content img{
-    width: 20%;
-    margin-left: 4px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 5px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #9a9a9a;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #b3b3b3;}
-  
-  /*------------------------*/
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+    }
+
+    .dropdown img {
+        width: 20%;
+        margin-left: -125px;
+
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #bdbdbdaf;
+        min-width: 10px;
+        z-index: 1;
+    }
+
+    .dropdown-content img {
+        width: 20%;
+        margin-left: 4px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #9a9a9a;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: #b3b3b3;
+    }
+
+    /*------------------------*/
 
 
-    .about-col-1, .about-col-2{
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+
+    .about-col-1 {
         margin-top: -10%;
         margin-bottom: 30px;
     }
-    .about-col-2 .about-me-text{
+
+    .about-col-2 .about-me-text {
         padding-right: 5%;
     }
-    #band{
+
+    #band {
         margin-top: -40px;
     }
-    .concerts-list .row{
+
+    .concerts-list .row {
         display: block;
     }
-    .concerts-col-1{
+
+    .concerts-col-1 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .concerts-col-2 {
         text-align: center;
     }
-    .contact p{
+
+    .concerts-col-3 {
+        text-align: center;
+    }
+
+    .contact p {
         font-size: 22px;
         text-align: center;
     }
-    .contact .social-icons{
+
+    .contact .social-icons {
         margin-left: 4%;
     }
-    .contact .social-icons .fa-brands{
+
+    .contact .social-icons .fa-brands {
         font-size: 60px;
     }
 }
