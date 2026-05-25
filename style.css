@@ -40,6 +40,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-weight: 500;
 }
 
 .logo {
