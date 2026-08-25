@@ -472,6 +472,31 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
+.slider {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+}
+
+.slides {
+    display: flex;
+    width: max-content;
+    animation: slider-slide-left 20s linear infinite;
+}
+
+.slides:hover {
+    animation-play-state: paused;
+}
+
+.slides img {
+    margin-right: 50px;
+}
+
+@keyframes slider-slide-left {
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /*----------css for small screen-----------*/
 nav .fa-solid {
     display: none;
@@ -632,5 +657,19 @@ nav .fa-solid {
 
     .contact .social-icons .fa-brands {
         font-size: 60px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slides {
+        animation-duration: 15s;
+    }
+
+    .slides img {
+        max-width: 120px;
+        height: auto;
+        margin-right: 20px;
     }
 }
