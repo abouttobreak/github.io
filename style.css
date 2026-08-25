@@ -231,6 +231,7 @@ nav ul li a:hover::after {
     background: #757575;
     transform: translateY(-10px);
 }
+
 /*-----------------band----------*/
 #band {
     padding: 50px 0;
@@ -240,6 +241,7 @@ nav ul li a:hover::after {
 .band-col-2 {
     flex-basis: 40%;
 }
+
 .slider {
     overflow: hidden;
     -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
@@ -265,6 +267,7 @@ nav ul li a:hover::after {
         transform: translateX(-50%);
     }
 }
+
 /*------------------concerts-------------*/
 #concerts {
     padding: 50px 0;
@@ -403,6 +406,7 @@ nav ul li a:hover::after {
 .presskit {
     margin-top: 30px;
 }
+
 .social-icons {
     margin-top: 30px;
 }
@@ -450,6 +454,15 @@ nav .fa-solid {
     #header {
         background-image: url(Assets/Background1.png);
 
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
     }
 
     nav .fa-solid {
