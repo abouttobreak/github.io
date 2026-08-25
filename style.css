@@ -180,76 +180,7 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
-/*-----------------band----------*/
 
-#band {
-    padding: 40px 0;
-}
-
-.member-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.member {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.member img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer {
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #404040);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 20px;
-    transition: height 0.5s;
-}
-
-.layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.layer a {
-    margin-top: 20px;
-    color: #363636;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 40px;
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.member:hover img {
-    transform: scale(1.1);
-}
-
-.member:hover .layer {
-    height: 100%;
-}
 
 /*---------------music-------------*/
 #music {
@@ -300,7 +231,40 @@ nav ul li a:hover::after {
     background: #757575;
     transform: translateY(-10px);
 }
+/*-----------------band----------*/
+#band {
+    padding: 50px 0;
+    color: #ababab;
+}
 
+.band-col-2 {
+    flex-basis: 40%;
+}
+.slider {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    animation: slider-slide-left 35s linear infinite;
+}
+
+.slides:hover {
+    animation-play-state: paused;
+}
+
+.slides img {
+    width: 9%;
+    margin-right: 10px;
+}
+
+@keyframes slider-slide-left {
+    100% {
+        transform: translateX(-50%);
+    }
+}
 /*------------------concerts-------------*/
 #concerts {
     padding: 50px 0;
@@ -430,7 +394,7 @@ nav ul li a:hover::after {
     margin-top: 30px;
 }
 
-.contact p i {
+.contact a {
     color: #757575;
     margin-right: 15px;
     font-size: 25px;
@@ -472,30 +436,7 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
-.slider {
-    overflow: hidden;
-    -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
-}
 
-.slides {
-    display: flex;
-    width: max-content;
-    animation: slider-slide-left 20s linear infinite;
-}
-
-.slides:hover {
-    animation-play-state: paused;
-}
-
-.slides img {
-    margin-right: 50px;
-}
-
-@keyframes slider-slide-left {
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
 /*----------css for small screen-----------*/
 nav .fa-solid {
@@ -646,7 +587,7 @@ nav .fa-solid {
         text-align: center;
     }
 
-    .contact p {
+    .contact a {
         font-size: 22px;
         text-align: center;
     }
@@ -660,16 +601,16 @@ nav .fa-solid {
     }
 
     .slider {
-        width: 100%;
+        margin-top: 20px;
+        width: 300%;
     }
 
     .slides {
-        animation-duration: 15s;
+        animation-duration: 35s;
     }
 
     .slides img {
-        max-width: 120px;
+        max-width: 50%;
         height: auto;
-        margin-right: 20px;
     }
 }
