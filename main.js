@@ -1,6 +1,20 @@
 const parallax = document.getElementById("header");
 
-window.addEventListener('scroll', function() {
-    let offset = window.pageYOffset;
-    parallax.style.backgroundPositionY = offset * 0.9 + 'px';
-});
+let ticking = false;
+
+window.addEventListener("scroll", () => {
+    if (!ticking) {
+        requestAnimationFrame(() => {
+            const offset = window.scrollY;
+
+            // Much smaller movement on mobile
+            const speed = window.innerWidth <= 1000 ? 0.25 : 0.9;
+
+            parallax.style.backgroundPositionY = `${offset * speed}px`;
+
+            ticking = false;
+        });
+
+        ticking = true;
+    }
+}, { passive: true });
