@@ -28,7 +28,7 @@ body {
     height: 100vh;
     background-image: url(Assets/Background1.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .container {
@@ -233,6 +233,12 @@ nav ul li a:hover::after {
 #band {
     padding: 50px 0;
     color: #ababab;
+    background-image: url(Assets/About-to-Break-Live.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(10, 10, 10, 0.8);
+    background-blend-mode: darken;
 }
 
 .band-col-2 {
@@ -384,6 +390,7 @@ nav ul li a:hover::after {
 .contact {
     text-align: center;
     margin-top: 50px;
+
 }
 
 .contact p {
