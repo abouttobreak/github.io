@@ -599,6 +599,7 @@ nav .fa-solid {
 
     #band {
         margin-top: -40px;
+        background-size: auto;
     }
 
     .concerts-list .row {
