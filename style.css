@@ -273,7 +273,8 @@ nav ul li a:hover::after {
 
 /*------------------concerts-------------*/
 #concerts {
-    padding: 50px 0;
+    padding: 30px 0;
+    background: #080808;
 }
 
 /* ── Section heading — keep .sub-title scoped to concerts ── */
@@ -646,5 +647,81 @@ nav .fa-solid {
     .slides img {
         max-width: 50%;
         height: auto;
+    }
+}
+
+/*----------------impressum----------------*/
+body > main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 3%;
+    color: #ababab;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+body > main h1 {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+body > main h2 {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+body > main .back-button {
+    margin-bottom: 24px;
+    padding: 10px 18px;
+    color: #fff;
+    background: #262626;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 2px;
+    font: inherit;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+body > main .back-button:hover {
+    background: #454545;
+    border-color: #757575;
+}
+
+body > main p {
+    margin-bottom: 24px;
+}
+
+body > main strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+body > main a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+body > main a:hover {
+    color: #ababab;
+}
+
+@media only screen and (max-width: 1000px) {
+    body > main {
+        padding-top: 35px;
+        font-size: 16px;
+    }
+
+    body > main h1 {
+        font-size: 40px;
+    }
+
+    body > main h2 {
+        font-size: 24px;
     }
 }
