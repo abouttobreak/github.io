@@ -22,7 +22,7 @@ const mouse = matchMedia("(hover: hover) and (pointer: fine)").matches;
 
 if (mouse) {
   const cursor = document.querySelector(".cursor");
-  const ease = 0.20;                    // 0.05 = floaty, 0.3 = snappy, 1 = no smoothing
+  const ease = 0.50;                    // 0.05 = floaty, 0.3 = snappy, 1 = no smoothing
   let tx = 0, ty = 0;                   // target (real pointer)
   let x = 0, y = 0;                     // rendered position
   let raf = 0, started = false;
